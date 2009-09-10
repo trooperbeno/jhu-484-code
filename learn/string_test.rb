@@ -3,21 +3,21 @@ require 'test/unit'
 class StringTest < Test::Unit::TestCase
 
   def test_length
-    s = "Hello, World!"
+    s = "Hola, World!"
     assert_equal(13, s.length)
   end
 
   def test_plus
-    s = "Hello"
+    s = "Hola"
     h = s + " World"
     assert_equal(h,"Hello World") 
     assert_equal(s,"Hello")
   end
   
   def test_append
-    s="Hello"
+    s="Hola"
     s << " World"
-    assert_equal(s,"Hello World")
+    assert_equal(s,"Hola World")
   end
 
   def test_interpolation
